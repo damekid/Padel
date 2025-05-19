@@ -8,8 +8,11 @@ from datetime import datetime, timezone, timedelta
 # LOKALE tijd waarop je wilt reserveren (CEST = UTC+2)
 RESERVEER_OP = "2025-05-19 10:30:01"  # Format: JJJJ-MM-DD HH:MM:SS
 
-AUTHORIZATION = "Basic bGlzYXgtYXBpLXB1Yi11c2VyOjZUNmhyTTBOZTkxQlNqa3ZpSnhoOE1BalNucE4xTTl1"
-LISA_AUTH_TOKEN = "N8PDEdj0GaE_XLqXmDZ0zA=="
+import os
+
+AUTHORIZATION = os.environ.get("AUTHORIZATION")
+LISA_AUTH_TOKEN = os.environ.get("LISA_AUTH_TOKEN")
+
 
 # === BEREKEN 'start_at' in UTC ===
 
