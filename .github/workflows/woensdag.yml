@@ -25,4 +25,4 @@ jobs:
         env:
           AUTHORIZATION: ${{ secrets.AUTHORIZATION }}
           LISA_AUTH_TOKEN: ${{ secrets.LISA_AUTH_TOKEN }}
-        run: python3 reserveer-woensdag.py
+        run: python3 woensdag.py
