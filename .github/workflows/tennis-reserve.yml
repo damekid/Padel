@@ -1,6 +1,7 @@
 name: Tennisbaan reserveren
 
 on:
+  workflow_dispatch:  # ← deze regel toevoegen
   schedule:
     - cron: '30 16 * * 1'   # 16:30 UTC is 18:30 CEST
 
