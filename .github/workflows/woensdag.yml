@@ -3,7 +3,7 @@ name: Tennisbaan reserveren (woensdag)
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 18 * * 1'   # 20:30 CEST
+    - cron: '37 18 * * 1'   # Elke maandag om 18:37 UTC = 20:37 CEST
 
 jobs:
   run-script:
